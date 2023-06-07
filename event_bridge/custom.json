@@ -1,0 +1,21 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        
+        {
+        "Effect": "Allow",
+        "Action": "*",
+        "Resource": "*"
+        },
+
+        {
+        "Action": "sts:AssumeRole",
+        "Effect": "Allow",
+
+        "Principal": {
+          "type": "Service",
+          "Service": "codebuild.amazonaws.com"
+        }
+      }
+    ]
+}

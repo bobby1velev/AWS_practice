@@ -1,0 +1,14 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - aws ec2 stop-instances --instance-ids ${instance_id}
+      # - yum install -y wget
+      # - wget https://github.com/gruntwork-io/cloud-nuke/releases/download/v0.1.24/cloud-nuke_linux_386
+      # - mv cloud-nuke_linux_386 /usr/local/bin/cloud-nuke
+      # - chmod u+x /usr/local/bin/cloud-nuke
+      # - cloud-nuke aws --force
+
+      # stop instance aws ec2 stop-instances --instance-ids i-0139a1a942d2a5e55
+      # make alarm to notify when instance goes down
+      # 
